@@ -1,7 +1,7 @@
 # Sponsorname - Mitigation contest details
-- Total Prize Pool: XXX XXX 
+- Total Prize Pool: $10,000 USDC 
 - [Warden guidelines for C4 mitigation reviews](https://code4rena.notion.site/Guidelines-for-Versus-mitigation-reviews-ed10fc5cfbf640bd8dcec66f38b343c4)
-- Submit findings [using the C4 form](https://code4rena.com/contests/YYYY-MM-sponsorName-mitigation-contest/submit)
+- Submit findings [using the C4 form](https://code4rena.com/contests/2023-05-asymmetry-mitigation-contest/submit)
 - Starts TBD XXX XXX XX 20:00 UTC
 - Ends TBD XXX XXX XX 20:00 UTC
 

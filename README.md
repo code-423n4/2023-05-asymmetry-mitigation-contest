@@ -34,8 +34,8 @@ Mitigations of all High and Medium issues will be considered in-scope and listed
 - [M-08: Possible DoS on unstake()](https://github.com/code-423n4/2023-03-asymmetry-findings/issues/685)
 - [M-09: Non-ideal rETH/WETH pool used pays unnecessary fees](https://github.com/code-423n4/2023-03-asymmetry-findings/issues/673)
 - [M-10: Stuck ether when use function stake with empty derivatives(derivativeCount = 0)](https://github.com/code-423n4/2023-03-asymmetry-findings/issues/363)
-- [M-11: Residual ETH unreachable and unuitilized in SafEth.sol] (https://github.com/code-423n4/2023-03-asymmetry-findings/issues/152)
-- [M-12: No slippage protection on stake() in SafEth.sol] (https://github.com/code-423n4/2023-03-asymmetry-findings/issues/150)
+- [M-11: Residual ETH unreachable and unuitilized in SafEth.sol](https://github.com/code-423n4/2023-03-asymmetry-findings/issues/152)
+- [M-12: No slippage protection on stake() in SafEth.sol](https://github.com/code-423n4/2023-03-asymmetry-findings/issues/150)
 
 
 ## Overview of changes

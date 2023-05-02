@@ -43,7 +43,7 @@ Mitigations of all High and Medium issues will be considered in-scope and listed
 Most of the mitigations I feel are self explanatory, and the Out of Scope ones are low priority that I think it is very straight forward.
 
 The one exception is H-04, I would like extra attention towards that one because we are assuming 1:1 but are reverting if the CRV pool is depegged.  I think there could be a better solution, but it seems that we had many 
-issues that contradicted solutions. 
+issues that had separate solutions, one being adding a chainlink oracle, which doesn't exist.
 
 
 ## Mitigations to be reviewed

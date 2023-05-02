@@ -15,7 +15,28 @@ Each warden must submit a mitigation review for *every High and Medium finding* 
 
 Mitigations of all High and Medium issues will be considered in-scope and listed here.
 
-- [H-01: Title](link to Github issue)
+- [H-01: An attacker can manipulate the preDepositvePrice to steal from other users.] (https://github.com/code-423n4/2023-03-asymmetry-findings/issues/1098)
+- [H-02: A temporary issue shows in the staking functionality which leads to the users receiving less minted tokens.] (https://github.com/code-423n4/2023-03-asymmetry-findings/issues/1004)
+- [H-03: Users can fail to unstake and lose their deserved ETH because malfunctioning or untrusted derivative cannot be removed.] (https://github.com/code-423n4/2023-03-asymmetry-findings/issues/703)
+- [H-04: Price of sfrxEth derivative is calculated incorrectly.] (https://github.com/code-423n4/2023-03-asymmetry-findings/issues/641)
+- [H-05: Reth poolPrice calculation may overflow.] (https://github.com/code-423n4/2023-03-asymmetry-findings/issues/593)
+- [H-06: WstEth derivative assumes a ~1=1 peg of stETH to ETH.] (https://github.com/code-423n4/2023-03-asymmetry-findings/issues/588)
+- [H-07: Reth.sol: Withdrawals are unreliable and depend on excess RocketDepositPool balance which can brick the whole protocol.] (https://github.com/code-423n4/2023-03-asymmetry-findings/issues/210)
+- [H-08: Staking, unstaking and rebalanceToWeight can be sandwiched (Mainly rETH deposit).] (https://github.com/code-423n4/2023-03-asymmetry-findings/issues/142)
+
+- [M-01: Division before multiplication truncate minOut and incurs heavy precision loss and result in insufficient slippage protection](https://github.com/code-423n4/2023-03-asymmetry-findings/issues/1078)
+- [M-02: sFrxEth may revert on redeeming non-zero amount](https://github.com/code-423n4/2023-03-asymmetry-findings/issues/1049)
+- [M-03: potential stake() DoS if sole safETH holder (ie: first depositor) unstakes totalSupply - 1](https://github.com/code-423n4/2023-03-asymmetry-findings/issues/1016)
+- [M-04: Lack of deadline for uniswap AMM](https://github.com/code-423n4/2023-03-asymmetry-findings/issues/932)
+- [M-05: Missing derivative limit and deposit availability checks will revert the whole stake() function](https://github.com/code-423n4/2023-03-asymmetry-findings/issues/812) 
+- [M-06: DoS due to external call failure](https://github.com/code-423n4/2023-03-asymmetry-findings/issues/770)
+- [M-07: In de-peg scenario, forcing full exit from every derivative & immediately re-entering can cause big losses for depositors](https://github.com/code-423n4/2023-03-asymmetry-findings/issues/765)
+- [M-08: Possible DoS on unstake()](https://github.com/code-423n4/2023-03-asymmetry-findings/issues/685)
+- [M-09: Non-ideal rETH/WETH pool used pays unnecessary fees](https://github.com/code-423n4/2023-03-asymmetry-findings/issues/673)
+- [M-10: Stuck ether when use function stake with empty derivatives(derivativeCount = 0)](https://github.com/code-423n4/2023-03-asymmetry-findings/issues/363)
+- [M-11: Residual ETH unreachable and unuitilized in SafEth.sol](https://github.com/code-423n4/2023-03-asymmetry-findings/issues/152)
+- [M-12: No slippage protection on stake() in SafEth.sol](https://github.com/code-423n4/2023-03-asymmetry-findings/issues/150)
+
 
 ## Overview of changes
 

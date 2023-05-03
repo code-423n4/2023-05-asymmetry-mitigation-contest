@@ -58,7 +58,6 @@ issues that had separate solutions, one being adding a chainlink oracle, which d
 | https://github.com/asymmetryfinance/smart-contracts/pull/242/files | H-06 | Using Chainlink to get price instead of assuming 1:1 | 
 | https://github.com/asymmetryfinance/smart-contracts/pull/258/files | H-07 | Check if withdraw from deposit contract possible | 
 | https://github.com/asymmetryfinance/smart-contracts/pull/209/files | H-08 | Using Chainlink to get price instead of poolPrice | 
-
 | https://github.com/asymmetryfinance/smart-contracts/pull/276/files | M-01 | Don't divide before multiply | 
 | https://github.com/asymmetryfinance/smart-contracts/pull/264/files | M-02 | Fixing it by enable/disable derivatives | 
 | https://github.com/asymmetryfinance/smart-contracts/pull/228/files | M-04 | Using swapTo/swapFrom directly from rocketpool | 

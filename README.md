@@ -40,16 +40,37 @@ Mitigations of all High and Medium issues will be considered in-scope and listed
 
 ## Overview of changes
 
-Please provide context about the mitigations that were applied if applicable and identify any areas of specific concern.
+Most of the mitigations I feel are self explanatory, and the Out of Scope ones are low priority that I think it is very straight forward.
+
+The one exception is H-04, I would like extra attention towards that one because we are assuming 1:1 but are reverting if the CRV pool is depegged.  I think there could be a better solution, but it seems that we had many 
+issues that had separate solutions, one being adding a chainlink oracle, which doesn't exist.
+
 
 ## Mitigations to be reviewed
 
-Wherever possible, mitigations should be provided in separate pull requests, one per issue. If that is not possible (e.g. because several audit findings stem from the same core problem), then please link the PR to all relevant issues in your findings repo. 
-
 | URL | Mitigation of | Purpose | 
 | ----------- | ------------- | ----------- |
-| https://github.com/code4rena/sample-contracts/pull/XXX | H-01 | This mitigation does XYZ | 
+| https://github.com/asymmetryfinance/smart-contracts/pull/282/files | H-01 | Use internal accounting to get the balance | 
+| https://github.com/asymmetryfinance/smart-contracts/pull/209/files | H-02 | Don't get rETH from pool on deposits | 
+| https://github.com/asymmetryfinance/smart-contracts/pull/264/files | H-03 | Enable/Disable Derivatives | 
+| https://github.com/asymmetryfinance/smart-contracts/pull/262/files | H-04 | To protect against oracle attacks we assume FRX is 1:1 with ETH and revert if the oracle says otherwise since there is no chainlink for FRX | 
+| https://github.com/asymmetryfinance/smart-contracts/pull/209/files | H-05 | Using Chainlink to get price instead of poolPrice | 
+| https://github.com/asymmetryfinance/smart-contracts/pull/242/files | H-06 | Using Chainlink to get price instead of assuming 1:1 | 
+| https://github.com/asymmetryfinance/smart-contracts/pull/258/files | H-07 | Check if withdraw from deposit contract possible | 
+| https://github.com/asymmetryfinance/smart-contracts/pull/209/files | H-08 | Using Chainlink to get price instead of poolPrice | 
+| https://github.com/asymmetryfinance/smart-contracts/pull/276/files | M-01 | Don't divide before multiply | 
+| https://github.com/asymmetryfinance/smart-contracts/pull/264/files | M-02 | Fixing it by enable/disable derivatives | 
+| https://github.com/asymmetryfinance/smart-contracts/pull/228/files | M-04 | Using swapTo/swapFrom directly from rocketpool | 
+| https://github.com/asymmetryfinance/smart-contracts/pull/264/files | M-05 | Fixing it by enable/disable derivatives | 
+| https://github.com/asymmetryfinance/smart-contracts/pull/209/files | M-08 | Use Chainlink to get rETH | 
+| https://github.com/asymmetryfinance/smart-contracts/pull/208/files | M-10 | Check derivativeCount on stake | 
+| https://github.com/asymmetryfinance/smart-contracts/pull/226 | M-11 | Use entire balance for rebalance | 
+| https://github.com/asymmetryfinance/smart-contracts/pull/252/files | M-12 | Pass in minAmount | 
 
 ## Out of Scope
 
-Please list any High and Medium issues that were judged as valid but you have chosen not to fix.
+| Reason | Issue |
+| ----------- | ------------- |
+| We will be manually holding safETH to prevent this, if not redeploy | M-03 |
+| This is as expected | M-06  | 
+| Will need a black swan event to happen and will upgrade rebalanceToWeights later to handle this | M-07  | 

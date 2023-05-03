@@ -69,6 +69,8 @@ issues that had separate solutions, one being adding a chainlink oracle, which d
 
 ## Out of Scope
 
+| Reason | Issue |
+| ----------- | ------------- |
 | We will be manually holding safETH to prevent this, if not redeploy | M-03 |
 | This is as expected | M-06  | 
 | Will need a black swan event to happen and will upgrade rebalanceToWeights later to handle this | M-07  | 

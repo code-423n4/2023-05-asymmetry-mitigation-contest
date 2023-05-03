@@ -57,10 +57,10 @@ issues that had separate solutions, one being adding a chainlink oracle, which d
 | https://github.com/asymmetryfinance/smart-contracts/pull/264/files | M-02 | Fixing it by enable/disable derivatives | 
 | https://github.com/asymmetryfinance/smart-contracts/pull/228/files | M-04 | Using swapTo/swapFrom directly from rocketpool | 
 | https://github.com/asymmetryfinance/smart-contracts/pull/264/files | M-05 | Fixing it by enable/disable derivatives | 
-| https://github.com/asymmetryfinance/smart-contracts/pull/209/files | M-08 | Use Chainlink to get rETH | 
-| https://github.com/asymmetryfinance/smart-contracts/pull/208/files | M-10 | Check derivativeCount on stake | 
-| https://github.com/asymmetryfinance/smart-contracts/pull/226 | M-11 | Use entire balance for rebalance | 
-| https://github.com/asymmetryfinance/smart-contracts/pull/252/files | M-12 | Pass in minAmount | 
+| https://github.com/asymmetryfinance/smart-contracts/pull/209/files | M-06 | Use Chainlink to get rETH | 
+| https://github.com/asymmetryfinance/smart-contracts/pull/208/files | M-07 | Check derivativeCount on stake | 
+| https://github.com/asymmetryfinance/smart-contracts/pull/226 | M-08 | Use entire balance for rebalance | 
+| https://github.com/asymmetryfinance/smart-contracts/pull/252/files | M-09 | Pass in minAmount | 
 
 ## Out of Scope
 

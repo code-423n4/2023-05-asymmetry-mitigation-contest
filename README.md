@@ -1,13 +1,13 @@
-# Asymmetry - Mitigation contest details
+# Asymmetry - Mitigation Review contest details
 - Total Prize Pool: $15,000 USDC 
 - [Warden guidelines for C4 mitigation reviews](https://code4rena.notion.site/Guidelines-for-Versus-mitigation-reviews-ed10fc5cfbf640bd8dcec66f38b343c4)
-- Submit findings [using the C4 form](https://code4rena.com/contests/2023-05-asymmetry-mitigation-contest/submit)
-- Starts  04 May 2023 20:00 UTC
-- Ends 09 May 2023 20:00 UTC
+- Submit findings [using the C4 form](https://code4rena.com/contests/2023-05-asymmetry-mitigation-review-contest/submit)
+- Starts May 4, 2023 20:00 UTC
+- Ends May 8, 2023 20:00 UTC
 
 ## Important note 
 
-Each warden must submit a mitigation review for *every High and Medium finding* from the parent contest. **Incomplete mitigation reviews will not be eligible for awards.**
+Each warden must submit a mitigation review for *every in-scope High and Medium finding* from the parent contest. **Incomplete mitigation reviews will not be eligible for awards.**
 
 ## Findings being mitigated
 
@@ -37,8 +37,7 @@ Mitigations of all High and Medium issues will be considered in-scope and listed
 
 Most of the mitigations I feel are self explanatory.
 
-The one exception is H-04, I would like extra attention towards that one because we are assuming 1:1 but are reverting if the CRV pool is depegged.  I think there could be a better solution, but it seems that we had many 
-issues that had separate solutions, one being adding a chainlink oracle, which doesn't exist.
+The one exception is H-04, I would like extra attention towards that one because we are assuming 1:1 but are reverting if the CRV pool is depegged.  I think there could be a better solution, but it seems that we had many issues that had separate solutions, one being adding a chainlink oracle, which doesn't exist.
 
 
 ## Mitigations to be reviewed
@@ -64,4 +63,8 @@ issues that had separate solutions, one being adding a chainlink oracle, which d
 
 ## Out of Scope
 
-All the above findings are in scope.
+| Reason | Issue |
+| ----------- | ------------- |
+| We will be manually holding safETH to prevent this, if not redeploy | M-03 |
+| This is as expected | M-06  | 
+| Will need a black swan event to happen and will upgrade rebalanceToWeights later to handle this | M-07  |

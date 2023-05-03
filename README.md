@@ -9,8 +9,6 @@
 
 Each warden must submit a mitigation review for *every High and Medium finding* from the parent contest. **Incomplete mitigation reviews will not be eligible for awards.**
 
-[ ⭐️ SPONSORS ADD INFO HERE ]
-
 ## Findings being mitigated
 
 Mitigations of all High and Medium issues will be considered in-scope and listed here.
